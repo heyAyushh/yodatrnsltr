@@ -10,8 +10,13 @@ Deploy this to azure functions with beta runtime and node version >= 8.9.4
 Sample Json request body
 ```
 {
-  "text":"Azure is Awesome
+  "text":"Azure functions is Awesome"
 }
 ```
+  
+Response to the above
 
+```
+Awesome, azure functions is.  Yes, hmmm.
+```
 *****************KUDOS*********************
