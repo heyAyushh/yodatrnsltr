@@ -1,0 +1,53 @@
+{
+	"info": {
+		"_postman_id": "bff99a5c-a876-49bc-86a3-0f56619c5b6e",
+		"name": "yodatranslator",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://yodatranslator.azurewebsites.net/api/say",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "use: literal\n  namespace: uri:http:www.yodaspeak.co.uk/webservice/yodatalk\n  encodingStyle: \n  message: yodaTalkRequest\n  parts:\n    inputText: xsd:string",
+						"value": "",
+						"disabled": true
+					},
+					{
+						"key": "",
+						"value": ""
+					},
+					{
+						"key": "use",
+						"value": "literal",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"text\":\"This is the text you need to translate\"\n}"
+				},
+				"url": {
+					"raw": "https://yodatranslator.azurewebsites.net/api/say",
+					"protocol": "https",
+					"host": [
+						"yodatranslator",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"say"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
